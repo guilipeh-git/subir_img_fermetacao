@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/static.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.css')}}">
+    <title>Subir Imagem</title>
+</head>
+<body>
+    <form action="{{url_for('returnMsg')}}" method="post" enctype="multipart/form-data">
+        <header><i><h1>Imagem Fermetação</h1></i></header>
+        <main>
+            <div class="form-group">
+                <label style="padding: 20px;"><h3>Arquivo Imagem:</h3></label>
+                <input type="file" id="file" name="file">
+                <div class="btn">
+                    <input type="submit" value="Submit" id="btn">
+                </div>
+                
+            </div>
+        </main>
+        
+    </form>
+</body>
+</html>
